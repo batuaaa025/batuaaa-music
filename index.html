@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Batuaaa Love You ❤️</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+html,body{
+    margin:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    font-family:Arial,sans-serif;
+    color:white;
+}
+
+body{
+    background:#030207;
+}
+
+
+/* ================================
+   PINK BLACK CINEMATIC BACKGROUND
+================================ */
+
+.scene{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+
+    background:
+        radial-gradient(
+            circle at 20% 25%,
+            rgba(255,0,110,.25),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 80% 25%,
+            rgba(145,0,255,.25),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 50% 75%,
+            rgba(255,20,90,.16),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #020105,
+            #10030f 35%,
+            #180515 60%,
+            #030207
+        );
+
+    animation:backgroundMove 15s ease-in-out infinite alternate;
+}
+
+@keyframes backgroundMove{
+    0%{
+        transform:scale(1);
+        filter:hue-rotate(0deg);
+    }
+
+    50%{
+        filter:hue-rotate(8deg);
+    }
+
+    100%{
+        transform:scale(1.06);
+        filter:hue-rotate(-8deg);
+    }
+}
+
+
+/* ================================
+   COLOURFUL GLOW
+================================ */
+
+.glow{
+    position:absolute;
+    width:55vw;
+    height:55vw;
+    border-radius:50%;
+    filter:blur(80px);
+    opacity:.32;
+    animation:glowMove 10s ease-in-out infinite alternate;
+}
+
+.glow1{
+    background:#ff006f;
+    left:-20%;
+    top:15%;
+}
+
+.glow2{
+    background:#7900ff;
+    right:-20%;
+    top:5%;
+    animation-delay:2s;
+}
+
+.glow3{
+    background:#ff174f;
+    left:30%;
+    bottom:-35%;
+    animation-delay:4s;
+}
+
+@keyframes glowMove{
+    from{
+        transform:translate(0,0) scale(1);
+    }
+
+    to{
+        transform:translate(30px,-25px) scale(1.18);
+    }
+}
+
+
+/* ================================
+   MOON
+================================ */
+
+.moon{
+    position:absolute;
+
+    width:90px;
+    height:90px;
+
+    right:12%;
+    top:9%;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            #fff,
+            #ffb5d8 35%,
+            #ff3d91 70%,
+            #b50063
+        );
+
+    box-shadow:
+        0 0 25px #ff4fa3,
+        0 0 70px rgba(255,0,130,.55),
+        0 0 130px rgba(150,0,255,.3);
+
+    animation:
+        moonFloat 5s ease-in-out infinite,
+        moonGlow 3s ease-in-out infinite;
+}
+
+@keyframes moonFloat{
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-9px);
+    }
+}
+
+@keyframes moonGlow{
+    0%,100%{
+        box-shadow:
+            0 0 25px #ff4fa3,
+            0 0 70px rgba(255,0,130,.45);
+    }
+
+    50%{
+        box-shadow:
+            0 0 40px #ff4fa3,
+            0 0 100px rgba(255,0,130,.7);
+    }
+}
+
+
+/* ================================
+   STARS
+================================ */
+
+.star{
+    position:absolute;
+
+    width:3px;
+    height:3px;
+
+    border-radius:50%;
+
+    background:#ffb7dc;
+
+    box-shadow:0 0 8px #ff4fa3;
+
+    animation:twinkle 2.5s ease-in-out infinite;
+}
+
+.s1{left:8%;top:14%;animation-delay:.2s}
+.s2{left:18%;top:30%;animation-delay:1s}
+.s3{left:29%;top:11%;animation-delay:1.7s}
+.s4{left:42%;top:22%;animation-delay:.5s}
+.s5{left:54%;top:10%;animation-delay:2s}
+.s6{left:66%;top:28%;animation-delay:1.2s}
+.s7{left:77%;top:13%;animation-delay:.7s}
+.s8{left:90%;top:25%;animation-delay:1.8s}
+.s9{left:35%;top:35%;animation-delay:2.3s}
+.s10{left:58%;top:36%;animation-delay:.3s}
+.s11{left:85%;top:39%;animation-delay:1.4s}
+
+@keyframes twinkle{
+    0%,100%{
+        opacity:.15;
+        transform:scale(.7);
+    }
+
+    50%{
+        opacity:1;
+        transform:scale(2);
+    }
+}
+
+
+/* ================================
+   RAIN
+================================ */
+
+.rain{
+    position:absolute;
+    top:-100px;
+
+    width:1px;
+    height:75px;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(255,105,180,.55)
+        );
+
+    animation:rainFall linear infinite;
+}
+
+.r1{left:5%;animation-duration:3s}
+.r2{left:13%;animation-duration:4s}
+.r3{left:22%;animation-duration:3.4s}
+.r4{left:31%;animation-duration:4.5s}
+.r5{left:40%;animation-duration:3.2s}
+.r6{left:49%;animation-duration:4.1s}
+.r7{left:58%;animation-duration:3.7s}
+.r8{left:67%;animation-duration:4.4s}
+.r9{left:76%;animation-duration:3.1s}
+.r10{left:85%;animation-duration:4s}
+.r11{left:94%;animation-duration:3.5s}
+
+@keyframes rainFall{
+    from{
+        transform:translateY(-100px);
+        opacity:0;
+    }
+
+    15%{
+        opacity:.7;
+    }
+
+    to{
+        transform:translateY(115vh);
+        opacity:0;
+    }
+}
+
+
+/* ================================
+   PINK FOG
+================================ */
+
+.fog{
+    position:absolute;
+
+    width:65%;
+    height:100px;
+
+    left:-70%;
+    bottom:28%;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(255,30,130,.18),
+            transparent 70%
+        );
+
+    filter:blur(20px);
+
+    animation:fogMove 25s linear infinite;
+}
+
+.fog2{
+    bottom:42%;
+    animation-duration:35s;
+    animation-delay:7s;
+}
+
+@keyframes fogMove{
+    from{
+        left:-70%;
+    }
+
+    to{
+        left:110%;
+    }
+}
+
+
+/* ================================
+   SILHOUETTES
+================================ */
+
+.person{
+    position:absolute;
+
+    bottom:14%;
+
+    width:65px;
+    height:160px;
+
+    z-index:3;
+
+    filter:
+        drop-shadow(0 0 15px rgba(255,0,120,.22));
+
+    animation:personMove 4s ease-in-out infinite alternate;
+}
+
+.person:before{
+    content:"";
+
+    position:absolute;
+
+    width:32px;
+    height:32px;
+
+    border-radius:50%;
+
+    top:0;
+    left:16px;
+
+    background:#020103;
+}
+
+.person:after{
+    content:"";
+
+    position:absolute;
+
+    width:58px;
+    height:112px;
+
+    top:30px;
+    left:3px;
+
+    border-radius:30px 30px 6px 6px;
+
+    background:#020103;
+}
+
+.boy{
+    left:27%;
+}
+
+.girl{
+    left:65%;
+    transform:scale(.82);
+
+    animation-delay:1s;
+}
+
+@keyframes personMove{
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-5px);
+    }
+}
+
+
+/* ================================
+   GROUND
+================================ */
+
+.ground{
+    position:absolute;
+
+    left:-10%;
+    right:-10%;
+    bottom:-12%;
+
+    height:38%;
+
+    background:
+        radial-gradient(
+            ellipse at center top,
+            rgba(255,0,120,.12),
+            transparent 50%
+        ),
+        linear-gradient(
+            #09020a,
+            #010103
+        );
+
+    border-radius:50% 50% 0 0;
+
+    z-index:4;
+}
+
+
+/* ================================
+   OVERLAY
+================================ */
+
+.overlay{
+    position:fixed;
+    inset:0;
+
+    z-index:5;
+
+    background:
+        radial-gradient(
+            circle,
+            transparent 30%,
+            rgba(0,0,0,.55)
+        );
+
+    pointer-events:none;
+}
+
+
+/* ================================
+   CONTENT
+================================ */
+
+.content{
+    position:relative;
+    z-index:10;
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:20px 18px 24px;
+}
+
+
+/* ================================
+   TOP
+================================ */
+
+.top{
+    width:100%;
+    max-width:950px;
+
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+
+    align-items:center;
+    gap:10px;
+}
+
+.time-box,
+.online-box{
+    padding:8px 13px;
+
+    border-radius:20px;
+
+    background:rgba(0,0,0,.45);
+
+    border:1px solid rgba(255,80,170,.25);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:
+        0 0 20px rgba(255,0,130,.08);
+
+    font-size:13px;
+}
+
+.time-box{
+    justify-self:start;
+}
+
+.online-box{
+    justify-self:end;
+}
+
+.creator-top{
+    justify-self:center;
+
+    white-space:nowrap;
+
+    font-size:clamp(10px,2.5vw,15px);
+
+    font-weight:bold;
+
+    color:#ffb7dc;
+
+    text-shadow:
+        0 0 8px #ff1680,
+        0 0 18px rgba(255,0,130,.6);
+}
+
+.online-dot{
+    display:inline-block;
+
+    width:7px;
+    height:7px;
+
+    border-radius:50%;
+
+    background:#ff4f9a;
+
+    box-shadow:
+        0 0 7px #ff4f9a,
+        0 0 15px #ff0077;
+
+    margin-right:5px;
+}
+
+
+/* ================================
+   CENTER TITLE
+================================ */
+
+.center{
+    width:100%;
+    max-width:750px;
+
+    text-align:center;
+}
+
+.little{
+    font-size:10px;
+
+    letter-spacing:5px;
+
+    color:#ff8bc4;
+
+    opacity:.7;
+
+    margin-bottom:12px;
+}
+
+.love-title{
+    margin:0;
+
+    font-size:clamp(38px,9vw,76px);
+
+    font-weight:800;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff4f9a,
+            #ffb0d5,
+            #c86cff,
+            #ff3d85
+        );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    color:transparent;
+
+    background-size:250% auto;
+
+    animation:titleColor 5s linear infinite;
+
+    text-shadow:
+        0 0 25px rgba(255,0,120,.22);
+}
+
+@keyframes titleColor{
+    from{
+        background-position:0% center;
+    }
+
+    to{
+        background-position:250% center;
+    }
+}
+
+.subtitle{
+    margin-top:12px;
+
+    color:#f0b4d0;
+
+    font-size:13px;
+
+    opacity:.75;
+}
+
+
+/* ================================
+   PLAYER
+================================ */
+
+.player{
+    width:100%;
+    max-width:430px;
+
+    padding:20px;
+
+    border-radius:25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(20,3,16,.75),
+            rgba(4,2,8,.75)
+        );
+
+    border:1px solid rgba(255,65,160,.3);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:
+        0 0 30px rgba(255,0,130,.12),
+        0 20px 70px rgba(0,0,0,.6);
+}
+
+
+/* ================================
+   CD
+================================ */
+
+.cd-area{
+    display:flex;
+    justify-content:center;
+
+    margin-bottom:18px;
+}
+
+.cd{
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #10040d 0 8%,
+            #ff7fba 8.5% 10%,
+            #151018 10.5% 23%,
+            #bd4c8b 23.5% 24%,
+            #0d0b11 24.5% 37%,
+            #ff9ccc 37.5% 38%,
+            #111 38.5% 51%,
+            #8c2d68 51.5% 52%,
+            #08070b 52.5% 100%
+        );
+
+    box-shadow:
+        0 0 20px rgba(255,0,130,.3);
+}
+
+.cd:after{
+    content:"";
+
+    position:absolute;
+
+    width:18px;
+    height:18px;
+
+    border-radius:50%;
+
+    background:#09070b;
+
+    border:3px solid #ff73b1;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+}
+
+.cd.playing{
+    animation:spin 3s linear infinite;
+}
+
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+
+/* ================================
+   PROGRESS
+================================ */
+
+#progress{
+    width:100%;
+    height:4px;
+
+    accent-color:#ff3d91;
+
+    cursor:pointer;
+}
+
+.time-row{
+    display:flex;
+    justify-content:space-between;
+
+    font-size:10px;
+
+    color:#ff9bc8;
+
+    opacity:.75;
+
+    margin-top:6px;
+}
+
+
+/* ================================
+   CONTROLS
+================================ */
+
+.controls{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:22px;
+
+    margin-top:15px;
+}
+
+.control{
+    width:48px;
+    height:48px;
+
+    border:1px solid rgba(255,80,170,.25);
+
+    border-radius:50%;
+
+    background:rgba(255,30,130,.10);
+
+    color:#ffb5d9;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.control:hover{
+    transform:scale(1.08);
+
+    background:rgba(255,30,130,.22);
+
+    box-shadow:
+        0 0 20px rgba(255,0,130,.25);
+}
+
+.pause{
+    width:60px;
+    height:60px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff3d91,
+            #9c35ff
+        );
+
+    color:white;
+
+    border:0;
+
+    box-shadow:
+        0 0 25px rgba(255,0,130,.4);
+
+    font-size:22px;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media(max-width:600px){
+
+    .content{
+        padding-top:16px;
+        padding-bottom:19px;
+    }
+
+    .top{
+        gap:5px;
+    }
+
+    .time-box,
+    .online-box{
+        padding:7px 8px;
+        font-size:10px;
+    }
+
+    .creator-top{
+        font-size:9px;
+        letter-spacing:.1px;
+    }
+
+    .moon{
+        width:62px;
+        height:62px;
+
+        right:9%;
+        top:12%;
+    }
+
+    .boy{
+        left:18%;
+        transform:scale(.8);
+    }
+
+    .girl{
+        left:67%;
+        transform:scale(.62);
+    }
+
+    .love-title{
+        font-size:40px;
+    }
+
+    .subtitle{
+        font-size:11px;
+    }
+
+    .player{
+        padding:17px;
+    }
+
+    .cd{
+        width:75px;
+        height:75px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ================================
+     ANIMATED BACKGROUND
+================================ -->
+
+<div class="scene">
+
+    <div class="glow glow1"></div>
+    <div class="glow glow2"></div>
+    <div class="glow glow3"></div>
+
+    <div class="moon"></div>
+
+    <span class="star s1"></span>
+    <span class="star s2"></span>
+    <span class="star s3"></span>
+    <span class="star s4"></span>
+    <span class="star s5"></span>
+    <span class="star s6"></span>
+    <span class="star s7"></span>
+    <span class="star s8"></span>
+    <span class="star s9"></span>
+    <span class="star s10"></span>
+    <span class="star s11"></span>
+
+    <span class="rain r1"></span>
+    <span class="rain r2"></span>
+    <span class="rain r3"></span>
+    <span class="rain r4"></span>
+    <span class="rain r5"></span>
+    <span class="rain r6"></span>
+    <span class="rain r7"></span>
+    <span class="rain r8"></span>
+    <span class="rain r9"></span>
+    <span class="rain r10"></span>
+    <span class="rain r11"></span>
+
+    <div class="fog"></div>
+    <div class="fog fog2"></div>
+
+    <div class="person boy"></div>
+    <div class="person girl"></div>
+
+    <div class="ground"></div>
+
+</div>
+
+
+<div class="overlay"></div>
+
+
+<!-- ================================
+     WEBSITE
+================================ -->
+
+<div class="content">
+
+
+    <div class="top">
+
+        <div class="time-box">
+
+            🕐
+            <span id="liveTime">00:00:00</span>
+
+        </div>
+
+
+        <div class="creator-top">
+
+            MODE BY MOHIT • FOR BATUAAA❤️
+
+        </div>
+
+
+        <div class="online-box">
+
+            <span class="online-dot"></span>
+
+            <span id="onlineCount">1</span>
+
+            Online
+
+        </div>
+
+    </div>
+
+
+    <div class="center">
+
+        <div class="little">
+
+            SOME MEMORIES NEVER FADE
+
+        </div>
+
+        <h1 class="love-title">
+
+            Batuaaa Love You
+
+        </h1>
+
+        <div class="subtitle">
+
+            कुछ दूरियाँ सिर्फ जगहों की होती हैं, दिलों की नहीं...
+
+        </div>
+
+    </div>
+
+
+    <div class="player">
+
+
+        <div class="cd-area">
+
+            <div
+                class="cd"
+                id="cd">
+            </div>
+
+        </div>
+
+
+        <input
+            type="range"
+            id="progress"
+            min="0"
+            max="100"
+            value="0"
+        >
+
+
+        <div class="time-row">
+
+            <span id="currentTime">0:00</span>
+
+            <span id="duration">0:00</span>
+
+        </div>
+
+
+        <div class="controls">
+
+            <button
+                class="control"
+                id="prev">
+                ⏮
+            </button>
+
+            <button
+                class="control pause"
+                id="play">
+                ▶
+            </button>
+
+            <button
+                class="control"
+                id="next">
+                ⏭
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<audio
+    id="audio"
+    preload="metadata">
+</audio>
+
+
+<script>
+
+/* ================================
+   SONGS
+================================ */
+
+const songs = [];
+
+for(let i=1;i<=11;i++){
+
+    songs.push({
+        file:"songs/song"+i+".mp3"
+    });
+
+}
+
+
+/* ================================
+   ELEMENTS
+================================ */
+
+const audio =
+    document.getElementById("audio");
+
+const play =
+    document.getElementById("play");
+
+const prev =
+    document.getElementById("prev");
+
+const next =
+    document.getElementById("next");
+
+const progress =
+    document.getElementById("progress");
+
+const currentTime =
+    document.getElementById("currentTime");
+
+const duration =
+    document.getElementById("duration");
+
+const cd =
+    document.getElementById("cd");
+
+let currentSong=0;
+
+
+/* ================================
+   LIVE CLOCK
+================================ */
+
+function updateClock(){
+
+    const now=new Date();
+
+    let h=String(now.getHours()).padStart(2,"0");
+    let m=String(now.getMinutes()).padStart(2,"0");
+    let s=String(now.getSeconds()).padStart(2,"0");
+
+    document.getElementById("liveTime")
+        .textContent=h+":"+m+":"+s;
+}
+
+updateClock();
+
+setInterval(updateClock,1000);
+
+
+/* ================================
+   FORMAT
+================================ */
+
+function formatTime(sec){
+
+    if(!sec || isNaN(sec))
+        return "0:00";
+
+    let m=Math.floor(sec/60);
+    let s=Math.floor(sec%60);
+
+    return m+":"+String(s).padStart(2,"0");
+}
+
+
+/* ================================
+   LOAD
+================================ */
+
+function loadSong(index){
+
+    currentSong=index;
+
+    audio.src=songs[index].file;
+
+    progress.value=0;
+
+    currentTime.textContent="0:00";
+    duration.textContent="0:00";
+
+    audio.load();
+}
+
+
+/* ================================
+   PLAY
+================================ */
+
+play.addEventListener("click",()=>{
+
+    if(audio.paused){
+
+        audio.play()
+        .then(()=>{
+
+            play.textContent="⏸";
+            cd.classList.add("playing");
+
+        });
+
+    }else{
+
+        audio.pause();
+
+        play.textContent="▶";
+
+        cd.classList.remove("playing");
+
+    }
+
+});
+
+
+/* ================================
+   NEXT
+================================ */
+
+next.addEventListener("click",()=>{
+
+    currentSong++;
+
+    if(currentSong>=songs.length)
+        currentSong=0;
+
+    loadSong(currentSong);
+
+    audio.play();
+
+    play.textContent="⏸";
+
+    cd.classList.add("playing");
+
+});
+
+
+/* ================================
+   PREVIOUS
+================================ */
+
+prev.addEventListener("click",()=>{
+
+    currentSong--;
+
+    if(currentSong<0)
+        currentSong=songs.length-1;
+
+    loadSong(currentSong);
+
+    audio.play();
+
+    play.textContent="⏸";
+
+    cd.classList.add("playing");
+
+});
+
+
+/* ================================
+   METADATA
+================================ */
+
+audio.addEventListener(
+    "loadedmetadata",
+    ()=>{
+
+        duration.textContent =
+            formatTime(audio.duration);
+
+    }
+);
+
+
+/* ================================
+   PROGRESS
+================================ */
+
+audio.addEventListener(
+    "timeupdate",
+    ()=>{
+
+        if(audio.duration){
+
+            progress.value =
+                (audio.currentTime/
+                audio.duration)*100;
+
+        }
+
+        currentTime.textContent =
+            formatTime(audio.currentTime);
+
+    }
+);
+
+
+/* ================================
+   SEEK
+================================ */
+
+progress.addEventListener(
+    "input",
+    ()=>{
+
+        if(audio.duration){
+
+            audio.currentTime =
+                (progress.value/100)*
+                audio.duration;
+
+        }
+
+    }
+);
+
+
+/* ================================
+   AUTO NEXT
+================================ */
+
+audio.addEventListener(
+    "ended",
+    ()=>{
+
+        currentSong++;
+
+        if(currentSong>=songs.length)
+            currentSong=0;
+
+        loadSong(currentSong);
+
+        audio.play();
+
+        play.textContent="⏸";
+
+        cd.classList.add("playing");
+
+    }
+);
+
+
+/* ================================
+   START
+================================ */
+
+loadSong(0);
+
+</script>
+
+</body>
+</html>
